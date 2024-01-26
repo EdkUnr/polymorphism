@@ -18,3 +18,5 @@ public class Main {
         station.check(bicycle);
     }
 }
+
+//Строка для создания PullRequest. Опять поздно вспомнил об этой особенности загрузки файлов в Git
