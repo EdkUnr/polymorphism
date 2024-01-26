@@ -1,16 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
-        car.setModelName("car1");
-        car.setWheelsCount(4);
-
-        Truck truck = new Truck();
-        truck.setModelName("truck1");
-        truck.setWheelsCount(6);
-
-        Bicycle bicycle = new Bicycle();
-        bicycle.setModelName("bicycle1");
-        bicycle.setWheelsCount(2);
+        Car car = new Car("car1", 4);
+        Truck truck = new Truck("truck1", 6);
+        Bicycle bicycle = new Bicycle("bicycle1", 2);
 
         ServiceStation station = new ServiceStation();
         station.check(car);
@@ -18,5 +10,3 @@ public class Main {
         station.check(bicycle);
     }
 }
-
-//Строка для создания PullRequest. Опять поздно вспомнил об этой особенности загрузки файлов в Git

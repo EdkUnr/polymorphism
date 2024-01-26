@@ -1,24 +1,10 @@
-public class Bicycle implements Vehicle {
-    private String modelName;
-    private int wheelsCount;
-
-    public String getModelName() {
-        return modelName;
+public class Bicycle extends Vehicle {
+    public Bicycle(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
 
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
-    }
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    @Override
+    public void performAdditionalChecks() {
+        // Для велосипеда нет дополнительных проверок
     }
 }
